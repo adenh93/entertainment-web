@@ -28,6 +28,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@chakra-ui/storybook-addon": "^4.0.16",
     "@graphql-codegen/cli": "3.3.0",
     "@graphql-codegen/client-preset": "3.0.0",
     "@graphql-codegen/introspection": "3.0.1",

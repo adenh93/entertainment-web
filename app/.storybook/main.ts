@@ -5,7 +5,11 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@chakra-ui/storybook-addon',
   ],
+  features: {
+    emotionAlias: false,
+  } as any,
   framework: {
     name: '@storybook/nextjs',
     options: {},
