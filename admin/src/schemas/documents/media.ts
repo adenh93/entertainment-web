@@ -60,8 +60,12 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
-      subtitle: 'mediaType',
+      genre: 'mediaGenre.title',
+      rating: 'rating.code',
       media: 'posterImage',
+    },
+    prepare({title, genre, rating, media}) {
+      return {title, media, subtitle: `${genre} / ${rating}`}
     },
   },
 })
