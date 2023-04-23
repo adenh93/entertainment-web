@@ -25,6 +25,12 @@ export default defineType({
       title: 'Description',
     }),
     defineField({
+      name: 'releaseDate',
+      type: 'date',
+      title: 'Release Date',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'posterImage',
       type: 'image',
       title: 'Poster Image',
