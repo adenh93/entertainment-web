@@ -1,0 +1,5 @@
+export { default as BookmarkIcon } from './BookmarkIcon'
+export { default as BrandIcon } from './BrandIcon'
+export { default as GridIcon } from './GridIcon'
+export { default as TVIcon } from './TVIcon'
+export { default as FilmIcon } from './FilmIcon'
