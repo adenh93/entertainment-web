@@ -1,12 +1,12 @@
 import { extendTheme } from '@chakra-ui/react'
 import colors from './colors'
-import spacing from './spacing'
+import space from './spacing'
 import fonts from './fonts'
 import * as components from './components'
 
 const theme = extendTheme({
   colors,
-  spacing,
+  space,
   fonts,
   components: {
     ...components,
