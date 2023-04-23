@@ -251,6 +251,7 @@ export type Media = Document & {
   mediaType?: Maybe<Scalars['String']>;
   posterImage?: Maybe<Image>;
   rating?: Maybe<MediaRating>;
+  releaseDate?: Maybe<Scalars['Date']>;
   slug?: Maybe<Slug>;
   title?: Maybe<Scalars['String']>;
 };
@@ -269,6 +270,7 @@ export type MediaFilter = {
   mediaType?: InputMaybe<StringFilter>;
   posterImage?: InputMaybe<ImageFilter>;
   rating?: InputMaybe<MediaRatingFilter>;
+  releaseDate?: InputMaybe<DateFilter>;
   slug?: InputMaybe<SlugFilter>;
   title?: InputMaybe<StringFilter>;
 };
@@ -490,6 +492,7 @@ export type MediaSorting = {
   description?: InputMaybe<SortOrder>;
   mediaType?: InputMaybe<SortOrder>;
   posterImage?: InputMaybe<ImageSorting>;
+  releaseDate?: InputMaybe<SortOrder>;
   slug?: InputMaybe<SlugSorting>;
   title?: InputMaybe<SortOrder>;
 };
