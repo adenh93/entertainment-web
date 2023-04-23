@@ -31,7 +31,6 @@ describe('extractSanityImage', () => {
     }
 
     const result = extractSanityImage(sanityImage)
-    console.log(sanityImage)
 
     expect(result).toEqual(expected)
   })
