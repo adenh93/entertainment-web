@@ -66,7 +66,7 @@ const mediaList: Media[] = [
         },
       },
     },
-    mediaType: 'tvSeries',
+    mediaType: 'tvShow',
     releaseDate: '2019-01-01',
     rating: { code: 'G' },
   },

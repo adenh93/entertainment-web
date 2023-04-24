@@ -27,7 +27,7 @@ const media: Media = {
       },
     },
   },
-  mediaType: 'tvSeries',
+  mediaType: 'tvShow',
   releaseDate: '2008-01-01',
   rating: { code: 'PG' },
 }

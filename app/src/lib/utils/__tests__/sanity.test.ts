@@ -12,7 +12,7 @@ describe('extractSanityImage', () => {
 
     const sanityImage: Image = {
       asset: {
-        source: { url },
+        url,
         altText,
         metadata: {
           dimensions: {
