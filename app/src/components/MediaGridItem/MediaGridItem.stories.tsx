@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Box } from '@chakra-ui/react'
 import { Media } from '@/graphql/codegen/graphql'
 import MediaGridItem from './MediaGridItem'
-import posterImage from './__fixtures__/top-gear.jpg'
+import posterImage from '@/storybook/__fixtures__/images/top-gear.jpg'
 
 const meta: Meta<typeof MediaGridItem> = {
   title: 'MediaGridItem',

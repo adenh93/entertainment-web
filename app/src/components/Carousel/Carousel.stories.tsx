@@ -1,12 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Media } from '@/graphql/codegen/graphql'
-
 import Carousel from './Carousel'
 import MediaCarouselItem from '@/components/MediaCarouselItem'
-
-import firstImage from './__fixtures__/beyond-earth.jpg'
-import secondImage from './__fixtures__/bottom-gear.jpg'
-import thirdImage from './__fixtures__/undiscovered-cities.jpg'
+import firstImage from '@/storybook/__fixtures__/images/beyond-earth.jpg'
+import secondImage from '@/storybook/__fixtures__/images/bottom-gear.jpg'
+import thirdImage from '@/storybook/__fixtures__/images/undiscovered-cities.jpg'
 
 const meta: Meta<typeof Carousel> = {
   title: 'Carousel',
