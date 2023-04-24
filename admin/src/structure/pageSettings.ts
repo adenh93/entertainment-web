@@ -10,6 +10,10 @@ export const pageSettingsListItem = (S: StructureBuilder): ListItemBuilder =>
         .title('Settings')
         .items([
           S.listItem()
+            .title('All Media Page')
+            .child(S.document().schemaType('pageAll').id('pageAll'))
+            .icon(DocumentIcon),
+          S.listItem()
             .title('Movie Page')
             .child(S.document().schemaType('pageMovies').id('pageMovies'))
             .icon(DocumentIcon),

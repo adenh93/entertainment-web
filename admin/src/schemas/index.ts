@@ -15,6 +15,7 @@ import mediaListFiltered from './sections/mediaListFiltered'
 import mediaListTrending from './sections/mediaListTrending'
 
 // Pages
+import pageAll from './pages/pageAll'
 import pageMovies from './pages/pageMovies'
 import pageTVSeries from './pages/pageTVSeries'
 import pageWishlist from './pages/pageBookmarks'
@@ -37,6 +38,7 @@ export const schemaTypes = [
   mediaListTrending,
 
   // Pages
+  pageAll,
   pageMovies,
   pageTVSeries,
   pageWishlist,
