@@ -10,15 +10,15 @@ export interface MediaDetailsProps {
 }
 
 const MediaTypeDisplay: Record<MediaType, string> = {
-  tvSeries: 'TV Series',
+  tvShow: 'TV Series',
   movie: 'Movie',
 }
 
 function getMediaIcon(mediaType: MediaType) {
-  const props: IconProps = { width: '12px', height: '12px' }
+  const props: IconProps = { width: '12px', height: '12px', color: 'white' }
 
   switch (mediaType) {
-    case 'tvSeries':
+    case 'tvShow':
       return <TVIcon {...props} />
     case 'movie':
       return <FilmIcon {...props} />
