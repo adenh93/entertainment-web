@@ -4,11 +4,11 @@ import { AspectRatio, Stack } from '@chakra-ui/react'
 import MediaDetails from '@/components/MediaDetails'
 import { extractSanityImage } from '@/lib/utils/sanity'
 
-export interface MediaTileProps {
+export interface MediaGridItemProps {
   media: Media
 }
 
-export default function MediaTile({ media }: MediaTileProps) {
+export default function MediaGridItem({ media }: MediaGridItemProps) {
   const image = extractSanityImage(media.posterImage)
 
   return (

@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Box } from '@chakra-ui/react'
 import { Media } from '@/graphql/codegen/graphql'
-import MediaTile from './MediaTile'
+import MediaGridItem from './MediaGridItem'
 import posterImage from './__fixtures__/top-gear.jpg'
 
-const meta: Meta<typeof MediaTile> = {
-  title: 'MediaTile',
-  component: MediaTile,
+const meta: Meta<typeof MediaGridItem> = {
+  title: 'MediaGridItem',
+  component: MediaGridItem,
 }
 
 export default meta
 
-type Story = StoryObj<typeof MediaTile>
+type Story = StoryObj<typeof MediaGridItem>
 
 const media: Media = {
   title: 'Top Gear',
@@ -34,7 +34,7 @@ const media: Media = {
 
 const Template = (args: any) => (
   <Box w={280}>
-    <MediaTile {...args} />
+    <MediaGridItem {...args} />
   </Box>
 )
 
