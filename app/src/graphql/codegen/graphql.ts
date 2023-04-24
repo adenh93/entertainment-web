@@ -494,6 +494,44 @@ export type MediaSorting = {
   title?: InputMaybe<SortOrder>;
 };
 
+export type PageAll = Document & {
+  __typename?: 'PageAll';
+  /** Date the document was created */
+  _createdAt?: Maybe<Scalars['DateTime']>;
+  /** Document ID */
+  _id?: Maybe<Scalars['ID']>;
+  _key?: Maybe<Scalars['String']>;
+  /** Current document revision */
+  _rev?: Maybe<Scalars['String']>;
+  /** Document type */
+  _type?: Maybe<Scalars['String']>;
+  /** Date the document was last modified */
+  _updatedAt?: Maybe<Scalars['DateTime']>;
+  settings?: Maybe<MediaPageSettings>;
+};
+
+export type PageAllFilter = {
+  /** Apply filters on document level */
+  _?: InputMaybe<Sanity_DocumentFilter>;
+  _createdAt?: InputMaybe<DatetimeFilter>;
+  _id?: InputMaybe<IdFilter>;
+  _key?: InputMaybe<StringFilter>;
+  _rev?: InputMaybe<StringFilter>;
+  _type?: InputMaybe<StringFilter>;
+  _updatedAt?: InputMaybe<DatetimeFilter>;
+  settings?: InputMaybe<MediaPageSettingsFilter>;
+};
+
+export type PageAllSorting = {
+  _createdAt?: InputMaybe<SortOrder>;
+  _id?: InputMaybe<SortOrder>;
+  _key?: InputMaybe<SortOrder>;
+  _rev?: InputMaybe<SortOrder>;
+  _type?: InputMaybe<SortOrder>;
+  _updatedAt?: InputMaybe<SortOrder>;
+  settings?: InputMaybe<MediaPageSettingsSorting>;
+};
+
 export type PageBookmarks = Document & {
   __typename?: 'PageBookmarks';
   /** Date the document was created */
@@ -620,6 +658,7 @@ export type RootQuery = {
   Media?: Maybe<Media>;
   MediaGenre?: Maybe<MediaGenre>;
   MediaRating?: Maybe<MediaRating>;
+  PageAll?: Maybe<PageAll>;
   PageBookmarks?: Maybe<PageBookmarks>;
   PageMovies?: Maybe<PageMovies>;
   PageTVSeries?: Maybe<PageTvSeries>;
@@ -629,6 +668,7 @@ export type RootQuery = {
   allMedia: Array<Media>;
   allMediaGenre: Array<MediaGenre>;
   allMediaRating: Array<MediaRating>;
+  allPageAll: Array<PageAll>;
   allPageBookmarks: Array<PageBookmarks>;
   allPageMovies: Array<PageMovies>;
   allPageTVSeries: Array<PageTvSeries>;
@@ -653,6 +693,11 @@ export type RootQueryMediaGenreArgs = {
 
 
 export type RootQueryMediaRatingArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type RootQueryPageAllArgs = {
   id: Scalars['ID'];
 };
 
@@ -711,6 +756,14 @@ export type RootQueryAllMediaRatingArgs = {
   offset?: InputMaybe<Scalars['Int']>;
   sort?: InputMaybe<Array<MediaRatingSorting>>;
   where?: InputMaybe<MediaRatingFilter>;
+};
+
+
+export type RootQueryAllPageAllArgs = {
+  limit?: InputMaybe<Scalars['Int']>;
+  offset?: InputMaybe<Scalars['Int']>;
+  sort?: InputMaybe<Array<PageAllSorting>>;
+  where?: InputMaybe<PageAllFilter>;
 };
 
 
