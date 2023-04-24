@@ -46,7 +46,9 @@ export default function MediaDetails({ media, size }: MediaDetailsProps) {
         </HStack>
         <Text size={textSize}>{media?.rating?.code}</Text>
       </MediaMetafields>
-      <Heading size={headingSize}>{media?.title}</Heading>
+      <Heading size={headingSize} noOfLines={1}>
+        {media?.title}
+      </Heading>
     </Stack>
   )
 }
