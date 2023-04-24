@@ -10,6 +10,7 @@ export default function MediaMetafields({ children }: PropsWithChildren) {
           borderWidth="1.5px !important"
           borderColor="white"
           borderRadius="full"
+          height="unset"
         />
       }
     >
