@@ -36,7 +36,11 @@ export default function Navigation() {
 
           return (
             <Link href={href}>
-              <Box as="span" color={isActive ? 'white' : 'icon'}>
+              <Box
+                as="span"
+                color={isActive ? 'white' : 'icon'}
+                _hover={{ color: isActive ? 'white' : 'brand' }}
+              >
                 {icon}
               </Box>
             </Link>
