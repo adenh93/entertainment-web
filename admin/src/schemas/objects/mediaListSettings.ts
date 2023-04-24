@@ -12,20 +12,6 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      title: 'Tile Size',
-      name: 'tileSize',
-      type: 'string',
-      options: {
-        list: [
-          {title: 'Small', value: 'sm'},
-          {title: 'Medium', value: 'md'},
-        ],
-        layout: 'radio',
-      },
-      initialValue: 'sm',
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
       title: 'Layout Type',
       name: 'layoutType',
       type: 'string',
