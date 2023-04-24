@@ -1,8 +1,18 @@
 import { Icon, IconProps } from '@chakra-ui/react'
 
-export default function PlayIcon({ width = 30, height = 30 }: IconProps) {
+export default function PlayIcon({
+  width = 30,
+  height = 30,
+  ...props
+}: IconProps) {
   return (
-    <Icon width={width} height={height} viewBox="0 0 30 30" fill="none">
+    <Icon
+      {...props}
+      width={width}
+      height={height}
+      viewBox="0 0 30 30"
+      fill="none"
+    >
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

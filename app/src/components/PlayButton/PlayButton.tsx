@@ -18,7 +18,7 @@ export default function PlayButton() {
         left="25%"
         transform="translate(-25%, -50%)"
       >
-        <PlayIcon />
+        <PlayIcon color="white" />
         <Heading as="span" size="xs">
           Play
         </Heading>
