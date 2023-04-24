@@ -373,7 +373,6 @@ export type MediaListSettings = {
   _key?: Maybe<Scalars['String']>;
   _type?: Maybe<Scalars['String']>;
   layoutType?: Maybe<Scalars['String']>;
-  tileSize?: Maybe<Scalars['String']>;
   title?: Maybe<Scalars['String']>;
 };
 
@@ -381,7 +380,6 @@ export type MediaListSettingsFilter = {
   _key?: InputMaybe<StringFilter>;
   _type?: InputMaybe<StringFilter>;
   layoutType?: InputMaybe<StringFilter>;
-  tileSize?: InputMaybe<StringFilter>;
   title?: InputMaybe<StringFilter>;
 };
 
@@ -389,7 +387,6 @@ export type MediaListSettingsSorting = {
   _key?: InputMaybe<SortOrder>;
   _type?: InputMaybe<SortOrder>;
   layoutType?: InputMaybe<SortOrder>;
-  tileSize?: InputMaybe<SortOrder>;
   title?: InputMaybe<SortOrder>;
 };
 
