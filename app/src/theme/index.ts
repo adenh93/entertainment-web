@@ -11,6 +11,13 @@ const theme = extendTheme({
   components: {
     ...components,
   },
+  styles: {
+    global: () => ({
+      body: {
+        bg: 'background',
+      },
+    }),
+  },
 })
 
 export default theme
