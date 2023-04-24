@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { Box } from '@chakra-ui/react'
+import { Media } from '@/graphql/codegen/graphql'
 import MediaTile from './MediaTile'
 import posterImage from './__fixtures__/top-gear.jpg'
-import { Media } from '@/graphql/codegen/graphql'
-import { Box } from '@chakra-ui/react'
 
 const meta: Meta<typeof MediaTile> = {
   title: 'MediaTile',
@@ -33,15 +33,14 @@ const media: Media = {
 }
 
 const Template = (args: any) => (
-  <Box maxW={280}>
+  <Box w={280}>
     <MediaTile {...args} />
   </Box>
 )
 
-export const Small: Story = {
+export const Primary: Story = {
   args: {
     media,
-    size: 'sm',
   },
   render: Template,
 }
