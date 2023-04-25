@@ -17,8 +17,8 @@ export default function Navigation() {
       alignItems="center"
       direction={{ sm: 'row', lg: 'column' }}
     >
-      {navItems.map((item) => (
-        <NavItem item={item} />
+      {navItems.map((item, key) => (
+        <NavItem item={item} key={key} />
       ))}
     </Stack>
   )
