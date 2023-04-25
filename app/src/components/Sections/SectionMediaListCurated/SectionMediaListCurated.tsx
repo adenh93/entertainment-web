@@ -1,8 +1,8 @@
-import { Box, Grid, Heading } from '@chakra-ui/react'
-import { MediaListCurated } from '@/graphql/codegen/graphql'
+import { Box, Heading } from '@chakra-ui/react'
+import { Media, MediaListCurated } from '@/graphql/codegen/graphql'
 import Carousel from '@/components/Carousel'
 import MediaCarouselItem from '@/components/MediaCarouselItem'
-import MediaGridItem from '@/components/MediaGridItem'
+import MediaGrid from '@/components/MediaGrid'
 
 export interface SectionMediaListCuratedProps {
   section: MediaListCurated
@@ -12,6 +12,7 @@ export default function SectionMediaListCurated({
   section,
 }: SectionMediaListCuratedProps) {
   const layout = section.settings?.layoutType as LayoutType
+  const items = section.items as Media[]
 
   if (!section.items) return <></>
 
@@ -27,16 +28,7 @@ export default function SectionMediaListCurated({
           ))}
         </Carousel>
       ) : (
-        <Grid
-          templateColumns="repeat(4, 1fr)"
-          columnGap={5.5}
-          rowGap={4}
-          pr={5}
-        >
-          {section.items.map((media, key) => (
-            <MediaGridItem media={media!} key={key} />
-          ))}
-        </Grid>
+        <MediaGrid items={items} />
       )}
     </Box>
   )
