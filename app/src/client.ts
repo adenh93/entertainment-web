@@ -6,7 +6,7 @@ export default function getClient() {
   if (!client || typeof window === 'undefined') {
     client = new ApolloClient({
       link: new HttpLink({
-        uri: process.env.SANITY_API_URL,
+        uri: process.env.NEXT_PUBLIC_SANITY_API_URL,
       }),
       cache: new InMemoryCache(),
     })
