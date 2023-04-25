@@ -7,6 +7,7 @@ const Input: ComponentStyleConfig = {
   variants: {
     flushed: {
       field: {
+        color: 'white',
         pb: 1,
         fontSize: '24px',
         fontWeight: 300,
