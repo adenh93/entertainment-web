@@ -6,9 +6,15 @@ export interface MediaGridProps {
   items: Media[]
 }
 
+const templateColumns = {
+  sm: 'repeat(2, 1fr)',
+  md: 'repeat(3, 1fr)',
+  lg: 'repeat(4, 1fr)',
+}
+
 export default function MediaGrid({ items }: MediaGridProps) {
   return (
-    <Grid templateColumns="repeat(4, 1fr)" columnGap={5.5} rowGap={4}>
+    <Grid templateColumns={templateColumns} columnGap={5.5} rowGap={4}>
       {items.map((media, key) => (
         <MediaGridItem media={media} key={key} />
       ))}
