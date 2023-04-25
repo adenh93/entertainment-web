@@ -16,7 +16,7 @@ const media: Media = {
   title: 'Beyond Earth',
   posterImage: {
     asset: {
-      source: { url: posterImage.src },
+      url: posterImage.src,
       altText: 'Beyond Earth poster image',
       metadata: {
         dimensions: {

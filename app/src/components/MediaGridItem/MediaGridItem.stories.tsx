@@ -17,7 +17,7 @@ const media: Media = {
   title: 'Top Gear',
   posterImage: {
     asset: {
-      source: { url: posterImage.src },
+      url: posterImage.src,
       altText: 'Top Gear poster image',
       metadata: {
         dimensions: {

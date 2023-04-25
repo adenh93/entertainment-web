@@ -20,7 +20,7 @@ const mediaList: Media[] = [
     title: 'Beyond Earth',
     posterImage: {
       asset: {
-        source: { url: firstImage.src },
+        url: firstImage.src,
         altText: 'Beyond Earth poster image',
         metadata: {
           dimensions: {
@@ -38,7 +38,7 @@ const mediaList: Media[] = [
     title: 'Bottom Gear',
     posterImage: {
       asset: {
-        source: { url: secondImage.src },
+        url: secondImage.src,
         altText: 'Bottom Gear poster image',
         metadata: {
           dimensions: {
@@ -56,7 +56,7 @@ const mediaList: Media[] = [
     title: 'Undiscovered Cities',
     posterImage: {
       asset: {
-        source: { url: thirdImage.src },
+        url: thirdImage.src,
         altText: 'Undiscovered Cities poster image',
         metadata: {
           dimensions: {
