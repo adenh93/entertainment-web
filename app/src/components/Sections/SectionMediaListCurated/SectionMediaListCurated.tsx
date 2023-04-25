@@ -17,7 +17,7 @@ export default function SectionMediaListCurated({
   if (!section.items) return <></>
 
   return (
-    <Box mb={5.5} overflow="hidden">
+    <Box mb={5.5}>
       <Heading size="lg" mb={3}>
         {section.settings?.title}
       </Heading>

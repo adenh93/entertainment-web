@@ -6,12 +6,14 @@ import Account from '@/components/Account'
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <HStack spacing={5} py={5} pl={5} alignItems="flex-start">
+    <HStack spacing={5} p={5} alignItems="flex-start">
       <Sidebar>
         <Navigation />
         <Account />
       </Sidebar>
-      <Box overflow="hidden">{children}</Box>
+      <Box overflow="hidden" w="full" maxW="1440px">
+        {children}
+      </Box>
     </HStack>
   )
 }
