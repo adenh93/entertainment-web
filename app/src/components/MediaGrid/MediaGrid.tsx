@@ -14,7 +14,13 @@ const templateColumns = {
 
 export default function MediaGrid({ items }: MediaGridProps) {
   return (
-    <Grid templateColumns={templateColumns} columnGap={5.5} rowGap={4}>
+    <Grid
+      templateColumns={templateColumns}
+      columnGap={{ sm: 2, md: 4, lg: 5.5 }}
+      rowGap={{ sm: 2, md: 3, lg: 4 }}
+      pr={4}
+      maxW={{ sm: 'unset', lg: '1240px' }}
+    >
       {items.map((media, key) => (
         <MediaGridItem media={media} key={key} />
       ))}

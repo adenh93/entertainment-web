@@ -8,15 +8,14 @@ export default function Layout({ children }: PropsWithChildren) {
   return (
     <Stack
       direction={{ sm: 'column', lg: 'row' }}
-      spacing={5}
-      p={5}
+      spacing={0}
       alignItems="flex-start"
     >
       <Sidebar>
         <Navigation />
         <Account />
       </Sidebar>
-      <Box overflow="hidden" w="full" maxW="1440px">
+      <Box overflow="hidden" w="full">
         {children}
       </Box>
     </Stack>

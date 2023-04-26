@@ -22,13 +22,11 @@ export default function SectionMediaListCurated({
         {section.settings?.title}
       </Heading>
       {layout === 'carousel' ? (
-        <Box>
-          <Carousel>
-            {section.items.map((media, key) => (
-              <MediaCarouselItem media={media!} key={key} />
-            ))}
-          </Carousel>
-        </Box>
+        <Carousel>
+          {section.items.map((media, key) => (
+            <MediaCarouselItem media={media!} key={key} />
+          ))}
+        </Carousel>
       ) : (
         <MediaGrid items={items} />
       )}
